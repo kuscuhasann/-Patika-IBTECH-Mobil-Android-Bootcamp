@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LayoutAndFragmentExample</string>
+    <string name="btn_splash_now_start">Şimdi Başla</string>
+    <string name="text_title_splash_screen">Kelime Testi</string>
+    <string name="text_info_splash_screen">Kelime Testi, Sizin dil seviyenizi ölçmek içindir. Test sonunda doğru ve yanlışlarınızı görebileceksiniz!</string>
+    <string name="default_text">Default</string>
+    <string name="default_main_text">Default Main Text</string>
+    <string name="default_timer_value">0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
