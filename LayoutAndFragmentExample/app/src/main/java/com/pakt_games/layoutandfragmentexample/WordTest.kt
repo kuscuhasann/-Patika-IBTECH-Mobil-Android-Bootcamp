@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.fragment_word_test.*
 
 class WordTest : Fragment() {
 
+    //Definition
     val sendIngWord="Respect"
     val sendTrWordArray=arrayOf<String>("Saygı","Güven","Başarı","Temel")
     val questionAnswerFragment=QuestionAnswer()
@@ -35,14 +36,17 @@ class WordTest : Fragment() {
             btnStartEvent(it)
         }
     }
+
     fun btnStartEvent(view: View)
     {
+        //Data Migration to Fragment
         val bundle=Bundle()
         bundle.putString("ingWord",sendIngWord)
         bundle.putStringArray("trWordArray",sendTrWordArray)
         questionAnswerFragment.arguments=bundle
-
+        //Checked Activity
         activity?.let {
+            //Fragment Transaction
             val fragmentManager=it!!.supportFragmentManager
             val fragmentTransaction=fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.frameLayout,questionAnswerFragment).commit()

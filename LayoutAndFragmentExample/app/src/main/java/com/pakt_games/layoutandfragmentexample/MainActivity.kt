@@ -10,19 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        //Pushed fragment to MainActivity
         replaceFragmentSafely(WordTest(),R.id.frameLayout)
-
-
     }
-
-    fun pushWordTestFragment(view: View)
-    {
-
-    }
-    fun pushQuestionAnswerFragment(view: View)
-    {
-
-    }
-
 }

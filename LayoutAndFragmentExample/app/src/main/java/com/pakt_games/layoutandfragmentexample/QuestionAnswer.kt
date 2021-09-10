@@ -13,15 +13,13 @@ import kotlinx.android.synthetic.main.fragment_question_answer.*
 
 class QuestionAnswer : Fragment() {
 
-
+    //Definition
     var getIngWord:String?=""
     var getTrWordArray:Array<String>?=null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
     }
 
     override fun onCreateView(
@@ -34,9 +32,11 @@ class QuestionAnswer : Fragment() {
 
 
     }
-
+    //Fragment if created
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //Pulling the data in Fragment
         getIngWord=arguments?.getString("ingWord")
         getTrWordArray=arguments?.getStringArray("trWordArray")
         main_word.setText(getIngWord)
@@ -44,17 +44,21 @@ class QuestionAnswer : Fragment() {
         btnB.setText(getTrWordArray?.get(1))
         btnC.setText(getTrWordArray?.get(2))
         btnD.setText(getTrWordArray?.get(3))
+        //Starting timer for timer object
         startTimer()
     }
 
      fun startTimer()
     {
+
         val timer = object: CountDownTimer(20000, 1000) {
+            //If timer is working
             override fun onTick(millisUntilFinished: Long) {
                 timer_object.text=(millisUntilFinished/1000).toString()
+                //ProgressBar data reduction
                 progress_circular_object.progress-=5;
             }
-
+            //If timer is finished
             override fun onFinish() {
                timer_object.text="0";
             }

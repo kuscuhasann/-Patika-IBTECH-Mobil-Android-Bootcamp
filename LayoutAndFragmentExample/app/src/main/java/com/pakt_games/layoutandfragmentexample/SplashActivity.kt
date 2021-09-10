@@ -18,6 +18,7 @@ class SplashActivity : AppCompatActivity() {
         //Timer Thread
         Timer().schedule(object : TimerTask() {
             override fun run() {
+                //Called MainActivity
                 startActivity<MainActivity>()
                 //destroyed splash activitiy
                 finish()
