@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ThirdWeekNavigationAndDesing</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="main_default_name">John Doe</string>
+    <string name="total_battle_count">12</string>
+    <string name="battle_win_text_count">9</string>
+    <string name="battle_text">Battle</string>
+    <string name="battle_win_text">Başarı</string>
+    <string name="fallow_us_text">Bizi Takip Edin</string>
+    <string name="multiplayer_text">İki Oyuncu</string>
+    <string name="singleplayer_text">Tek Oyuncu</string>
+    <string name="empty_state_title_text">Empty State Title</string>
+    <string name="empty_state_sub_word_text">empty state sub word</string>
+    <string name="data_text_for_recycler">Kullanıcı adınızı oluşturun ve size uygun bir avatar seçin</string>
+    <string name="alert_pop_up_positive_button_text">HAYIR</string>
+    <string name="alert_pop_up_negative_button_text">EVET</string>
+    <string name="alert_pop_up_message_text">Uygulamadan ayrılmak istediğinize emin misiniz ?</string>
+    <string name="alert_pop_up_message_title_text">ÇIKIŞ</string>
+</resources>

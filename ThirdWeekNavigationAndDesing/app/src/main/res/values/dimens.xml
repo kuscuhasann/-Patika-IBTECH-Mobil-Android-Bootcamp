@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="x_small_margin">5dp</dimen>
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="medium_margin">25dp</dimen>
+    <dimen name="large_margin">50dp</dimen>
+    <dimen name="x_large_margin">60dp</dimen>
+    <dimen name="xx_large_margin">125dp</dimen>
+    <dimen name="xxx_large_margin">150dp</dimen>
+    <dimen name="xxxx_large_margin">205dp</dimen>
+
+    <dimen name="big_text_size">32sp</dimen>
+    <dimen name="singleplayer_text_size">28sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="empty_state_sub_word_text_size">18sp</dimen>
+    <dimen name="avatar_recycler_text_size">24sp</dimen>
+
+</resources>
