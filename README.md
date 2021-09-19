@@ -6,12 +6,12 @@ Patika-IBTECH Mobil Android Bootcamp eğitimi süresince yapmış olduğum tüm 
 ![github](imagesOffProject/screen2.PNG)
 ![github](imagesOffProject/screen3.PNG)
 ## 3.Week NavigationAndRecyclerViewExaple IMAGES
-![github](imagesOffProject/thirdWeek/splashScreenImage)
-![github](imagesOffProject/thirdWeek/battleScreen)
-![github](imagesOffProject/thirdWeek/emptyScreen)
-![github](imagesOffProject/thirdWeek/profileScreen)
-![github](imagesOffProject/thirdWeek/profileScreenPopUp)
-![github](imagesOffProject/thirdWeek/avatarScreenUnSelectedCheckBox)
-![github](imagesOffProject/thirdWeek/avatarScreenSelectedCheckBox)
+![github](imagesOffProject/thirdWeek/splashScreenImage.PNG)
+![github](imagesOffProject/thirdWeek/battleScreen.PNG)
+![github](imagesOffProject/thirdWeek/emptyScreen.PNG)
+![github](imagesOffProject/thirdWeek/profileScreen.PNG)
+![github](imagesOffProject/thirdWeek/profileScreenPopUp.PNG)
+![github](imagesOffProject/thirdWeek/avatarScreenUnSelectedCheckBox.PNG)
+![github](imagesOffProject/thirdWeek/avatarScreenSelectedCheckBox.PNG)
 
 
