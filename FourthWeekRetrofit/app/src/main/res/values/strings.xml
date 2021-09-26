@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FourthWeekRetrofit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="toast_check_fields">Kullanıcı Adını ve Şifreyi Lütfen Kontrol Ediniz</string>
+    <string name="toast_fail">Giriş Başarısız Oldu</string>
+    <string name="toast_login_please">Lütfen Giriş Yapın</string>
+</resources>

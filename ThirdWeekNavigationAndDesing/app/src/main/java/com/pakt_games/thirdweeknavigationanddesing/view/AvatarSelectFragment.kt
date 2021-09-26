@@ -27,7 +27,6 @@ class AvatarSelectFragment : Fragment() {
         super.onCreate(savedInstanceState)
 
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -51,7 +50,6 @@ class AvatarSelectFragment : Fragment() {
                     else -> 1
                 }
             }
-
         }
         recyclerviewAvatarFragment.layoutManager= layoutManager
         recyclerviewAvatarFragment.adapter = recylerAvatarAdapter
