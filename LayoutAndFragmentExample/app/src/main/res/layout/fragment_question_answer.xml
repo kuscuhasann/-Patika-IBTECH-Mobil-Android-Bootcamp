@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/lower_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="74dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/upper_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="311dp" />
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="@id/lower_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/upper_guideline">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_rowWeight="1"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:background="@drawable/true_button"
+            android:text="@string/default_text"
+            android:textColor="@color/text_basic"
+            android:id="@+id/btnA"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_rowWeight="1"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:background="@drawable/answer_button"
+            android:text="@string/default_text"
+            android:textColor="@color/text_basic"
+            android:id="@+id/btnB"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_rowWeight="1"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:background="@drawable/answer_button"
+            android:text="@string/default_text"
+            android:textColor="@color/text_basic"
+            android:id="@+id/btnC"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_rowWeight="1"
+            android:layout_margin="@dimen/small_margin"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:background="@drawable/answer_button"
+            android:text="@string/default_text"
+            android:textColor="@color/text_basic"
+            android:id="@+id/btnD"
+            />
+
+    </GridLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"/>
+
+    <Button
+        android:id="@+id/main_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x_large_margin"
+        android:background="@drawable/main_word_button"
+        android:textStyle="bold"
+        android:text="@string/default_main_text"
+        android:textColor="@color/text_basic"
+        app:layout_constraintBottom_toTopOf="@id/upper_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_bar_image"
+        app:layout_constraintBottom_toTopOf="@id/main_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:id="@+id/line_bar"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quest_number_info_image_"
+        android:textColor="@color/text_basic"
+        app:layout_constraintBottom_toTopOf="@id/line_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/medium_margin"/>
+
+    <TextView
+        android:id="@+id/timer_object"
+        android:layout_width="61dp"
+        android:layout_height="55dp"
+        android:background="@drawable/oval_timer"
+        android:text="@string/default_timer_value"
+        android:textColor="@color/text_basic"
+        android:typeface="normal"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/progress_circular_object"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_circular_object"
+        app:layout_constraintEnd_toEndOf="@+id/progress_circular_object"
+        app:layout_constraintStart_toStartOf="@+id/progress_circular_object" />
+
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+
+        android:id="@+id/progress_circular_object"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/progress_circle"
+        android:rotation="-90"
+        app:layout_constraintBottom_toTopOf="@id/line_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:progress="100"
+        tools:visibility="visible"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

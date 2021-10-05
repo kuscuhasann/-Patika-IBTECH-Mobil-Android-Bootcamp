@@ -14,5 +14,6 @@
     <color name="empty_state_title_color">#FF6C81</color>
     <color name="empty_state_sub_word_color">#999999</color>
     <color name="view_select_avatar_fragment_background">#F3EBE4</color>
-    <color name="avatar_fragment_text_color">#000000</color>
+    <color name="avatar_fragment_text_color">#FFFFFF</color>
+    <color name="avatar_fragment_text_background_color">#51CF66</color>
 </resources>
