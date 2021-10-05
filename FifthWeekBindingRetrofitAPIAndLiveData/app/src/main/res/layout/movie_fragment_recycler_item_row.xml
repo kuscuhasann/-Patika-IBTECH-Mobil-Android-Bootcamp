@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="horizontal"
-        android:onClick="@{(v) -> listener.onclick(v, model.uuid)}">
+        android:onClick="@{(v) -> listener.onclick(v, model.uuid, model.title)}">
 
         <ImageView
             android:id="@+id/foodImageViewIdAtRecyclerRow"

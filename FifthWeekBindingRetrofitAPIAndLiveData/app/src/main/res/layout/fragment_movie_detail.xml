@@ -8,6 +8,7 @@
         <variable
             name="model"
             type="com.pakt_games.myapplication.ui.movielist.model.Movie" />
+
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout

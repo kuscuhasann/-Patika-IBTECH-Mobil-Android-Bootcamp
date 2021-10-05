@@ -4,5 +4,5 @@ import android.view.View
 
 
 interface IMovieListRecyclerViewListener {
-    fun onclick(view: View,uuid: Int)
+    fun onclick(view: View, uuid: Int, movieTitle: String)
 }

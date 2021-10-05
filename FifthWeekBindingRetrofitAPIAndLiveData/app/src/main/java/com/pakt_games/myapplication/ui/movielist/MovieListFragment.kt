@@ -6,6 +6,7 @@ import androidx.navigation.Navigation
 import com.pakt_games.myapplication.R
 import com.pakt_games.myapplication.base.BaseFragment
 import com.pakt_games.myapplication.databinding.FragmentMovieListBinding
+import com.pakt_games.myapplication.ui.moviehome.HomeFragmentDirections
 import com.pakt_games.myapplication.ui.movielist.adapter.IMovieListRecyclerViewListener
 import com.pakt_games.myapplication.ui.movielist.adapter.MovieListRecyclerAdapter
 
@@ -29,10 +30,8 @@ class MovieListFragment : BaseFragment<MovieListViewModel, FragmentMovieListBind
         })
     }
 
-    override fun onclick(view: View, uuid: Int) {
-        val action=MovieListFragmentDirections.actionMovieListFragmentToMovieDetailFragment(uuid)
+    override fun onclick(view: View, uuid: Int, movieTitle: String) {
+        val action=HomeFragmentDirections.actionHomeFragmentToMovieDetailFragment(movieId = uuid, movieTitle = movieTitle)
         Navigation.findNavController(view).navigate(action)
     }
-
-
 }

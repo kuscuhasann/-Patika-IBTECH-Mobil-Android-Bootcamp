@@ -3,10 +3,8 @@ package com.pakt_games.myapplication.ui.movielist.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.pakt_games.myapplication.R
-import com.pakt_games.myapplication.ui.movielist.MovieListFragmentDirections
 import com.pakt_games.myapplication.ui.movielist.model.Movie
 
 class MovieListRecyclerAdapter(private val movieList: List<Movie>, private var listener: IMovieListRecyclerViewListener) : RecyclerView.Adapter<MovieListRecyclerViewHolder>() {

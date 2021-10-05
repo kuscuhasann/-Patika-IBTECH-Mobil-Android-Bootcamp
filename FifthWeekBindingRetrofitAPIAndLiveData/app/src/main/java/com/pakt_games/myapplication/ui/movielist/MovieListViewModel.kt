@@ -2,7 +2,6 @@ package com.pakt_games.myapplication.ui.movielist
 
 import android.app.Application
 import androidx.lifecycle.MediatorLiveData
-import androidx.lifecycle.ViewModel
 import com.pakt_games.myapplication.base.BaseViewModel
 import com.pakt_games.myapplication.db.MovieDataBase
 import com.pakt_games.myapplication.repository.MovieRepository
@@ -26,15 +25,15 @@ class MovieListViewModel(application: Application) : BaseViewModel(application) 
         }
     }
 
-    private fun saveToDataInSQLite(foodList:List<Movie>){
+    private fun saveToDataInSQLite(movieList:List<Movie>){
         launch {
             val dao=MovieDataBase(getApplication()).movieDAO()
-            dao.deleteAllFoods()
-            val uuidList = dao.insertAll(*foodList.toTypedArray())
-            dao.getAllFoods()
+            dao.deleteAllMovies()
+            val uuidList = dao.insertAll(*movieList.toTypedArray())
+            dao.getAllMovies()
             var i=0
-            while (i<foodList.size) {
-                foodList[i].uuid = uuidList[i].toInt()
+            while (i<movieList.size) {
+                movieList[i].uuid = uuidList[i].toInt()
                 i=i+1
             }
         }
